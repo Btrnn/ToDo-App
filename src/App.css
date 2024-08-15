@@ -51,6 +51,7 @@ section {
   opacity: 0.6; 
 }
 
+/* Task */
 .task-header{
   font-size: 11px; 
   font-weight: 300;
@@ -91,7 +92,7 @@ section {
 }
 
 
-
+/* Add-button */
 .button-add {
   display: flex;
   align-items: right;
@@ -108,18 +109,8 @@ section {
   height: 29px;
   filter: invert(41%) sepia(90%) saturate(744%) hue-rotate(235deg) brightness(100%) contrast(95%);
 }
-.error-message {
-  max-width: 220px; 
-  white-space: nowrap;  
-  text-overflow: ellipsis;
-  color: #d05254;
-  align-items: top; 
-  margin-left: 52px;
-  font-size: 10px; 
-  height: 30px;
-}
 
-
+/* Delete and done button */
 .button {
   background: none;
   border: none;
@@ -135,6 +126,19 @@ section {
 }
 
 
+/* Error message */
+.error-message {
+  max-width: 220px; 
+  white-space: nowrap;  
+  text-overflow: ellipsis;
+  color: #d05254;
+  align-items: top; 
+  margin-left: 52px;
+  font-size: 10px; 
+  height: 30px;
+}
+
+/* Popup notification when add and delete successfully */
 .popup-message {
   position: fixed;
   top: 10px;
