@@ -17,6 +17,7 @@ function App() {
     setInputTask(event.target.value);
   };
 
+  // Add task function
   const handleAdd = () => {
     if (tasks.includes(inputTask)) {
       setError('The name already exists');
@@ -37,6 +38,7 @@ function App() {
     }
   };
 
+  // Mark done task function
   const handleDone = (index) => {
     const newTasks = tasks.filter((_, i) => i !== index);
     const taskToMove = tasks[index];
@@ -44,12 +46,14 @@ function App() {
     setDoneTasks([taskToMove, ...doneTasks]);
   };
 
+  // Delete task function
   const handleDelete = (index) => {
     const newTasks = tasks.filter((_, i) => i !== index);
     setTasks(newTasks);
     showPopup('Task deleted successfully', '#f44336');
   };
 
+  // Notificate function
   const showPopup = (message, color) => {
     setPopup({ visible: true, message, color});
     setTimeout(() => {
