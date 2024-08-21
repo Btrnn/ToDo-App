@@ -109,7 +109,7 @@ function App() {
               </section>
             ))
           ) : (
-            <div style={{textAlign: 'center', margin: '120px 0' }}>
+            <div style={{textAlign: 'center', marginTop: '125px', marginLeft: '50px' }}>
               No data
             </div>
           )}
@@ -127,7 +127,7 @@ function App() {
               </section>
             ))
           ) : (
-            <div style={{textAlign: 'center', margin: '20px 0' }}>
+            <div style={{textAlign: 'center', marginTop: '40px', marginLeft: '50px' }}>
               No data
             </div>
           )}
